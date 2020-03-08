@@ -9,6 +9,7 @@
 /*
 由此可见通过extend扩展的会被原来的覆盖，
 其原因是通过extend扩展的优先级高于mixins混入和原来的，
+mixins接收对象数组（可理解为多继承），extends接收的是对象或函数（可理解为单继承）。
 */
 import { mixinObj, extendObj } from '@/utils/mixins';
 export default {

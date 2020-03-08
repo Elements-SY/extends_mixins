@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h3>
+      由此可见通过extend扩展的会被原来的覆盖，
+      其原因是通过extend扩展的优先级高于mixins混入和原来的，
+      mixins接收对象数组（可理解为多继承），extends接收的是对象或函数（可理解为单继承）。
+    </h3>
+    <router-view />
   </div>
 </template>
 
@@ -19,5 +23,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h3 {
+  color: #f31919;
 }
 </style>
